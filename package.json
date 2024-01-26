@@ -9,7 +9,7 @@
   "commands": [
     {
       "name": "index",
-      "title": "Set Status",
+      "title": "Set Slack Status",
       "subtitle": "Sets status message and emoji",
       "description": "",
       "mode": "no-view"

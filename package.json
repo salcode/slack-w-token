@@ -12,7 +12,19 @@
       "title": "Set Slack Status",
       "subtitle": "Sets status message and emoji",
       "description": "",
-      "mode": "no-view"
+      "mode": "no-view",
+      "arguments": [
+        {
+          "name": "Status Message",
+          "type": "text",
+          "placeholder": "(message)"
+        },
+        {
+          "name": "Status Emoji",
+          "type": "text",
+          "placeholder": "(emoji)"
+        }
+      ]
     }
   ],
   "dependencies": {

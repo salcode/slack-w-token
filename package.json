@@ -16,7 +16,8 @@
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.66.1"
+    "@raycast/api": "^1.66.1",
+    "@slack/web-api": "^7.0.1"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.6",

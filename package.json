@@ -33,5 +33,15 @@
     "fix-lint": "ray lint --fix",
     "lint": "ray lint",
     "publish": "npx @raycast/api@latest publish"
-  }
+  },
+  "preferences": [
+    {
+      "description": "Slack token to authorize communication",
+      "name": "slackToken",
+      "placeholder": "abc1234",
+      "required": true,
+      "title": "Slack Token",
+      "type": "password"
+    }
+  ]
 }

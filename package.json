@@ -15,12 +15,12 @@
       "mode": "no-view",
       "arguments": [
         {
-          "name": "Status Message",
+          "name": "message",
           "type": "text",
           "placeholder": "(message)"
         },
         {
-          "name": "Status Emoji",
+          "name": "emoji",
           "type": "text",
           "placeholder": "(emoji)"
         }

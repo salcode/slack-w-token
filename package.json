@@ -25,6 +25,25 @@
           "placeholder": "(emoji)"
         }
       ]
+    },
+    {
+      "name": "postMessage",
+      "title": "Post Slack Message",
+      "subtitle": "Post Slack message in a channel",
+      "description": "",
+      "mode": "no-view",
+      "arguments": [
+        {
+          "name": "message",
+          "type": "text",
+          "placeholder": "(message)"
+        },
+        {
+          "name": "channel",
+          "type": "text",
+          "placeholder": "(#channel)"
+        }
+      ]
     }
   ],
   "dependencies": {

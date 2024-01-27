@@ -3,8 +3,8 @@
  *
  * See https://api.slack.com/methods/users.profile.set
  */
-import { getPreferenceValues, LaunchProps, showHUD } from "@raycast/api";
-import { LogLevel, WebClient } from "@slack/web-api";
+import { LaunchProps, showHUD } from "@raycast/api";
+import getSlackWebClient from './utils/getSlackWebClient';
 
 type StatusArgs = {
   message: string;
@@ -18,10 +18,8 @@ export default async function main(props: LaunchProps<{ arguments: StatusArgs }>
       emoji
     }
   } = props;
-  const { slackToken } = getPreferenceValues<Preferences>();
-  const slack = new WebClient(slackToken, {
-    logLevel: LogLevel.DEBUG,
-  });
+
+  const slack = getSlackWebClient();
   slack.users.profile.set({
     profile: {
       status_text: message,
